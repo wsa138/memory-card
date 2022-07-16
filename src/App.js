@@ -1,7 +1,14 @@
 import './App.css';
+import CardBoard from './components/CardBoard';
+import GameBoard from './components/GameBoard';
 
 function App() {
-  return <div className="App">Test</div>;
+  return (
+    <div>
+      <GameBoard />
+      <CardBoard />
+    </div>
+  );
 }
 
 export default App;
