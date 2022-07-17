@@ -1,6 +1,6 @@
 import CardBoard from './components/CardBoard';
 import GameBoard from './components/GameBoard';
-import './styles/app.css';
+import './styles/App.css';
 
 function App() {
   return (
