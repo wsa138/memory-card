@@ -8,8 +8,12 @@ export default function GameBoard() {
 
   return (
     <div>
-      <h1>Memory Card Game</h1>
-      <ScoreBoard highSchore={highScore} currentScore={currentScore} />
+      <h1 id="title">Memory Card Game</h1>
+      <ScoreBoard
+        id="scoreboard"
+        highSchore={highScore}
+        currentScore={currentScore}
+      />
     </div>
   );
 }
