@@ -11,6 +11,11 @@ export default function GameBoard() {
     setCurrentScore((prevState) => prevState + 1);
   }
 
+  // FIX: This function resets the score.
+  const resetGame = () => {
+    setCurrentScore(0);
+  };
+
   return (
     <div>
       <h1 id="title">Memory Card Game</h1>
@@ -19,7 +24,7 @@ export default function GameBoard() {
         highSchore={highScore}
         currentScore={currentScore}
       />
-      <CardBoard increaseScore={increaseScore} />
+      <CardBoard increaseScore={increaseScore} resetGame={resetGame} />
     </div>
   );
 }
