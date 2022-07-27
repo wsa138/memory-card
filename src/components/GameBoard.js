@@ -8,7 +8,6 @@ export default function GameBoard() {
   const [currentScore, setCurrentScore] = useState(0);
 
   function increaseScore() {
-    console.log('clicked');
     setCurrentScore((prevState) => prevState + 1);
   }
 

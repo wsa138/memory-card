@@ -1,3 +1,3 @@
 export default function Card(props) {
-  return <div onClick={props.increaseScore}>{props.cardDisplay}</div>;
+  return <div onClick={props.handleCardClick}>{props.cardDisplay}</div>;
 }
