@@ -1,4 +1,3 @@
-import CardBoard from './components/CardBoard';
 import GameBoard from './components/GameBoard';
 import './styles/App.css';
 
