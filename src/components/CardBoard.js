@@ -4,7 +4,7 @@ import gotImages from '../images/imageIndex';
 
 export default function CardBoard(props) {
   // Will eventually contain the card images.
-  const cardArray = [gotImages.arya];
+  const cardArray = gotImages;
 
   // FIXME: Function needs the rest of it's functionality added.
   // Handles everything that needs to happen when a card is clicked.
@@ -17,8 +17,8 @@ export default function CardBoard(props) {
     // Shuffle the cards as they appear on screen.
   };
 
-  const cardComponentArray = cardArray.map((item) => (
-    <Card handleCardClick={handleCardClick} key={item} cardDisplay={item} />
+  const cardComponentArray = cardArray.map((image) => (
+    <Card handleCardClick={handleCardClick} key={image} cardDisplay={image} />
   ));
 
   return (

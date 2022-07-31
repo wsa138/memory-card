@@ -1,4 +1,6 @@
-import arya from '../images/arya-stark-1920.jpg';
-import bran from '../images/bran.jpg';
+import arya from '../images/gotImages/arya-stark-1920.jpg';
+import bran from '../images/gotImages/bran.jpg';
 
-export default { arya, bran };
+const images = [arya, bran];
+
+export default images;
