@@ -1,15 +1,16 @@
 import Card from './Card';
 import '../styles/cardBoard.css';
+import gotImages from '../images/imageIndex';
 
 export default function CardBoard(props) {
   // Will eventually contain the card images.
-  const cardArray = [0, 1, 2, 3, 4, 5, 6, 7];
+  const cardArray = [gotImages.arya];
 
-  // FIX Function: Needs the rest of it's functionality added.
+  // FIXME: Function needs the rest of it's functionality added.
   // Handles everything that needs to happen when a card is clicked.
   const handleCardClick = () => {
     // If card has not been clicked yet, increase score.
-    //FIX: Additionally needs to set the high score.
+    //FIXME: Additionally needs to set the high score.
     props.increaseScore();
     // If card has already been clicked, reset the game.
     props.resetGame();
@@ -20,5 +21,9 @@ export default function CardBoard(props) {
     <Card handleCardClick={handleCardClick} key={item} cardDisplay={item} />
   ));
 
-  return <div id="cardBoard">{cardComponentArray} </div>;
+  return (
+    <div>
+      <div id="cardBoard">{cardComponentArray} </div>
+    </div>
+  );
 }

@@ -11,7 +11,7 @@ export default function GameBoard() {
     setCurrentScore((prevState) => prevState + 1);
   }
 
-  // FIX: This function resets the score.
+  // FIXME: This function resets the score.
   const resetGame = () => {
     setCurrentScore(0);
   };
