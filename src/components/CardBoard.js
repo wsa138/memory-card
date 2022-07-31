@@ -13,7 +13,9 @@ export default function CardBoard(props) {
     //FIXME: Additionally needs to set the high score.
     props.increaseScore();
     // If card has already been clicked, reset the game.
-    props.resetGame();
+    if (false) {
+      props.resetGame();
+    }
     // Shuffle the cards as they appear on screen.
   };
 
