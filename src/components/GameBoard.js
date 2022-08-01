@@ -1,11 +1,19 @@
 import ScoreBoard from './Scoreboard';
 import '../styles/GameBoard.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import CardBoard from './CardBoard';
 
 export default function GameBoard() {
   const [highScore, setHighScore] = useState(0);
   const [currentScore, setCurrentScore] = useState(0);
+
+  // FIXME: useEffect hook. Runs when score changes,
+  // checks to see if currentScore is higher than highScore.
+  useEffect(() => {
+    if (currentScore > highScore) {
+      setHighScore(currentScore);
+    }
+  }, [currentScore]);
 
   function increaseScore() {
     setCurrentScore((prevState) => prevState + 1);
