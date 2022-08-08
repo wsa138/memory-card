@@ -1,7 +1,7 @@
 import Card from './Card';
 import '../styles/cardBoard.css';
 import gotImages from '../images/imageIndex';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function CardBoard(props) {
   const [clickedArray, setClickedArray] = useState([]);
@@ -18,17 +18,31 @@ export default function CardBoard(props) {
       props.increaseScore();
       // Add clicked card to clickedArray
       setClickedArray((prevState) => [...prevState, clickedCard]);
-      // FIXME: Shuffle the cards as they appear on screen.
+    }
+    // Shuffle cardArray
+    shuffleCards(cardArray);
+  };
+
+  const shuffleCards = (arr) => {
+    for (let i = arr.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
     }
   };
 
-  const cardComponentArray = cardArray.map((image) => (
-    <Card handleCardClick={handleCardClick} key={image} cardDisplay={image} />
-  ));
-
   return (
     <div>
-      <div id="cardBoard">{cardComponentArray} </div>
+      <div id="cardBoard">
+        {cardArray.map((image) => (
+          <Card
+            handleCardClick={handleCardClick}
+            key={image}
+            cardDisplay={image}
+          />
+        ))}{' '}
+      </div>
     </div>
   );
 }
