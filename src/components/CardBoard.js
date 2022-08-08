@@ -1,7 +1,7 @@
 import Card from './Card';
 import '../styles/cardBoard.css';
 import gotImages from '../images/imageIndex';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 export default function CardBoard(props) {
   const [clickedArray, setClickedArray] = useState([]);
