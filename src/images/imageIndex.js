@@ -7,7 +7,6 @@ import daenerys from '../images/gotImages/daenerys.jpg';
 import davos from '../images/gotImages/davos.jpg';
 import hodor from '../images/gotImages/hodor.jpg';
 import jamie from '../images/gotImages/jamie.jpg';
-import jaqen from '../images/gotImages/jaqen.jpg';
 import joffery from '../images/gotImages/joffery.jpg';
 import jon from '../images/gotImages/jon-snow.jpg';
 import jorah from '../images/gotImages/jorah.jpg';
@@ -23,7 +22,6 @@ import theon from '../images/gotImages/theon.jpg';
 import tormund from '../images/gotImages/tormund.jpg';
 import tyrion from '../images/gotImages/tyrion.jpg';
 import tywin from '../images/gotImages/tywin.jpg';
-import varys from '../images/gotImages/varys.png';
 
 const images = [
   arya,
@@ -35,7 +33,6 @@ const images = [
   davos,
   hodor,
   jamie,
-  jaqen,
   joffery,
   jon,
   jorah,
@@ -51,7 +48,6 @@ const images = [
   tormund,
   tyrion,
   tywin,
-  varys,
 ];
 
 export default images;
