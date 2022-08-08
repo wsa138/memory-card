@@ -2,6 +2,7 @@ import ScoreBoard from './Scoreboard';
 import '../styles/GameBoard.css';
 import { useEffect, useState } from 'react';
 import CardBoard from './CardBoard';
+import Rules from './Rules';
 
 export default function GameBoard() {
   const [highScore, setHighScore] = useState(0);
@@ -27,6 +28,7 @@ export default function GameBoard() {
   return (
     <div>
       <h1 id="title">Memory Card Game</h1>
+      <Rules />
       <ScoreBoard
         id="scoreboard"
         highSchore={highScore}
