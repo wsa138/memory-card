@@ -1,0 +1,21 @@
+button {
+  font-size: 1.5em;
+  transition-duration: 0.4s;
+  border-radius: 12px;
+  width: 2.5em;
+  height: 1.5em;
+  margin: 0.25em 0 0.25em 0;
+  background-color: #f64c72;
+  color: black;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  background-color: #99738e; /* Green */
+  color: black;
+}
+
+#rulesContainer {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,36 @@
+.cardImage {
+  height: 12.5em;
+  width: 15em;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16em;
+  height: 13.5em;
+  border-radius: 5px;
+  background-color: #f64c72;
+}
+
+@media only screen and (max-width: 635px) {
+  .cardImage {
+    height: 10em;
+    width: 10em;
+  }
+  .card {
+    width: 11em;
+    height: 11em;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .cardImage {
+    height: 7.5em;
+    width: 7.5em;
+  }
+  .card {
+    width: 8em;
+    height: 8em;
+  }
+}

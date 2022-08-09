@@ -3,7 +3,7 @@ import './styles/App.css';
 
 function App() {
   return (
-    <div>
+    <div id="mainSection">
       <GameBoard />
     </div>
   );

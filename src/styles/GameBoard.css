@@ -1,3 +1,10 @@
 #title {
-  color: red;
+  color: #f64c72;
+  font-size: 4em;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+#rules {
+  font-size: 5em;
 }
