@@ -1,0 +1,20 @@
+#cardBoard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2em 2em;
+}
+
+#cardContainer {
+  margin: 2em 2em 2em 2em;
+}
+
+@media only screen and (max-width: 415px) {
+  #cardBoard {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em 2em;
+  }
+}

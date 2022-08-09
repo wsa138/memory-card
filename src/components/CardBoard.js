@@ -1,5 +1,5 @@
 import Card from './Card';
-import '../styles/cardBoard.css';
+import '../styles/CardBoard.css';
 import gotImages from '../images/imageIndex';
 import { useState } from 'react';
 
@@ -33,7 +33,7 @@ export default function CardBoard(props) {
   };
 
   return (
-    <div>
+    <div id="cardContainer">
       <div id="cardBoard">
         {cardArray.map((image) => (
           <Card
