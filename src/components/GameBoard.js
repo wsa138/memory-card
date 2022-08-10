@@ -27,13 +27,9 @@ export default function GameBoard() {
 
   return (
     <div>
-      <h1 id="title">Memory Card Game</h1>
+      <h1 id="title">Memory Game</h1>
       <Rules />
-      <ScoreBoard
-        id="scoreboard"
-        highSchore={highScore}
-        currentScore={currentScore}
-      />
+      <ScoreBoard highSchore={highScore} currentScore={currentScore} />
       <CardBoard increaseScore={increaseScore} resetGame={resetGame} />
     </div>
   );

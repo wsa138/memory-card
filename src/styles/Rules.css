@@ -1,0 +1,18 @@
+button {
+  font-size: 1.4em;
+  transition-duration: 0.4s;
+  border-radius: 12px;
+  width: 2.5em;
+  height: 1.5em;
+  margin: 0.25em 0 0.25em 0;
+}
+
+button:hover {
+  background-color: grey; /* Green */
+  color: black;
+}
+
+#rulesContainer {
+  display: flex;
+  justify-content: center;
+}

@@ -1,4 +1,14 @@
-#scoreboard {
-  color: blue;
+#scoreboardContainer {
   display: flex;
+  justify-content: center;
+}
+
+#scoreboard {
+  color: rgb(245, 245, 245);
+  display: flex;
+  font-size: 1.75em;
+  display: flex;
+  justify-content: space-around;
+  letter-spacing: 0.5px;
+  width: 75%;
 }
