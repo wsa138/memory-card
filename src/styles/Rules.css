@@ -19,3 +19,32 @@ button:hover {
   display: flex;
   justify-content: center;
 }
+
+#rulesModalBorder {
+  border: #f64c72 solid 0.5em;
+  color: #242582;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  left: center;
+  top: 20%;
+  height: 10em;
+  width: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rulesModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rulesText {
+  font-size: 2em;
+  text-align: center;
+}
+
+#closeButton {
+}
