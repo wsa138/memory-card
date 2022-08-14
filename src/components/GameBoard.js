@@ -18,7 +18,7 @@ export default function GameBoard() {
 
   // Check if high score === 24, then acknowledge win.
   useEffect(() => {
-    if (highScore === 2) {
+    if (highScore === 24) {
       setWin(true);
       setTimeout(winGame, 3000);
     }
