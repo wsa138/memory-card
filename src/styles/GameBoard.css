@@ -9,5 +9,36 @@
   font-size: 5em;
 }
 
-#overlay {
+#winModalBorder {
+  border: #f64c72 solid 0.5em;
+  color: #242582;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  top: 20%;
+  height: 20em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#winModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#winText {
+  font-size: 10em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 485px) {
+  #winText {
+    font-size: 7em;
+  }
+  #winModalBorder {
+    height: 15em;
+  }
 }
