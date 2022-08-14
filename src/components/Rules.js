@@ -24,6 +24,7 @@ export default function Rules() {
     <div id="rulesContainer">
       <button onClick={rulesClick}>Rules</button>
       {showRules ? rulesDiv : null}
+      {showRules ? <div id="overlay"></div> : null}
     </div>
   );
 }
